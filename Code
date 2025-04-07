@@ -1,0 +1,11 @@
+     int count = 5;
+     byte number = 1;
+     sbyte littleNumber = 2;
+     long bigNumber = 12;
+     short smallNumber = 3;
+     ushort verySmall = 34;
+     ulong soBig = 232;
+     bool IdontKnow = true;
+     bool IhaventIdea = false;
+     sbyte soLittle = 54;
+     string hi = "Hi";
