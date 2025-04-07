@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FirstProject {
     internal class Program {
-        static void Main(string[] args) {
-
+        static void Main(string[] args) 
+    {
             string name;
             Console.Write("Введите ваше имя: ");
             name = Console.ReadLine();
@@ -25,3 +25,7 @@ namespace FirstProject {
             job = Console.ReadLine();
             Console.WriteLine($"Вы работаете: {job}");
             Console.WriteLine($"Вас зовут {name} ваш возраст {age} ваш рост {height} вы рабоатете на {job}");
+      }
+
+  }
+  }
