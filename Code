@@ -8,4 +8,4 @@
      bool isFalse = false;
      string mybrain = "I dont know";
      double first = 5.7;
-     char mybrain = ' ';
+     char symbol = ' ';
