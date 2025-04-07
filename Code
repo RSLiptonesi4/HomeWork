@@ -4,8 +4,7 @@
      short five = 5;
      sbyte minusTen = -10;
      float pi = 3.14f;
-     bool isTrue = true;
-     bool isFalse = false;
-     string mybrain = "I dont know";
+     string sentence = "string";
      double first = 5.7;
      char symbol = ' ';
+     ulong twentyThree = 23;
