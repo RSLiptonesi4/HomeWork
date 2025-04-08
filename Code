@@ -4,13 +4,17 @@ namespace FirstProject {
     internal class Program {
         static void Main(string[] args) 
         {
-            int pictures = 52;
-            int picturesInRow = 3;
-            int completeRows = pictures / picturesInRow;
-            int leftoverPictures = pictures % picturesInRow;
-            Console.WriteLine("Всего полных рядов: " + completeRows);
-            Console.WriteLine("Осталось всего картин: " + leftoverPictures);
-
+string first = "Jason";
+string second = "Stepler";
+Console.WriteLine("Обычное состояние");
+Console.WriteLine("Имя:" + first);
+Console.WriteLine("Фамилия:" + second);
+string conversely = first;
+first = second;
+second = conversely;
+Console.WriteLine("Наоборот состояние");
+Console.WriteLine("Фамилия:" + first);
+Console.WriteLine("Имя:" + second);
         }
 
     }
