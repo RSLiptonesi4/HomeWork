@@ -4,28 +4,15 @@ namespace FirstProject {
     internal class Program {
         static void Main(string[] args) 
         {
-
-            string name;
-            Console.Write("Введите ваше имя: ");
-            name = Console.ReadLine();
-            Console.WriteLine($"Ваше имя: {name}");
-            int age;
-            Console.Write("Введите ваш возраст: ");
-            age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Вам: {age} let");
-            int height;
-            Console.Write("Введите ваш рост: ");
-            height = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Ваш рост: {height} ");
-            string job;
-            Console.Write("Где вы работаете?");
-            job = Console.ReadLine();
-            Console.WriteLine($"Вы работаете: {job}");
-            Console.WriteLine($"Вас зовут {name} ваш возраст {age} ваш рост {height} вы рабоатете на {job}");
+            int pictures = 52;
+            int picturesInRow = 3;
+            int completeRows = pictures / picturesInRow;
+            int leftoverPictures = pictures % picturesInRow;
+            Console.WriteLine("Всего полных рядов: " + completeRows);
+            Console.WriteLine("Осталось всего картин: " + leftoverPictures);
 
         }
 
     }
 }
-
 
