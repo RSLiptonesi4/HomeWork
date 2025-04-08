@@ -6,15 +6,29 @@ namespace FirstProject {
         {
 string first = "Jason";
 string second = "Stepler";
-Console.WriteLine("Обычное состояние");
-Console.WriteLine("Имя:" + first);
-Console.WriteLine("Фамилия:" + second);
+Console.WriteLine("Regular state");
+Console.WriteLine("Name:" + first);
+Console.WriteLine("Surname:" + second);
 string conversely = first;
 first = second;
 second = conversely;
-Console.WriteLine("Наоборот состояние");
-Console.WriteLine("Фамилия:" + first);
-Console.WriteLine("Имя:" + second);
+Console.WriteLine("Reserve state");
+Console.WriteLine("Surname:" + first);
+Console.WriteLine("Name:" + second);
+
+string firstCup = "Tea";
+string secondCup = "Jucy";
+Console.WriteLine("First state");
+Console.WriteLine("First cup:" + firstCup);
+Console.WriteLine("Second cup:" + secondCup);
+string round = firstCup;
+firstCup = secondCup;
+secondCup = round;
+Console.WriteLine("Second state");
+Console.WriteLine("Second cup:" + firstCup);
+Console.WriteLine("First cup:" + secondCup);
+
+
         }
 
     }
