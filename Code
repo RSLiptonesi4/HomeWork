@@ -2,19 +2,24 @@ using System;
 
 namespace FirstProject {
     internal class Program {
-        static void Main(string[] args) {
+        static void Main(string[] args) 
+            {
             int gold;
-            int crystall;
-            int crystallPrice = 10;
-            Console.WriteLine("Добро пожаловать, курс обмена 1 кристалл = 10 золота. ");
+            int crystallCount;
+            int crystallPrice = 5;
+
+            Console.WriteLine("Добро пожаловать, курс обмена 1 кристалл = 5 золота. ");
             Console.Write("Сколько у вас золота? ");
+
             gold = Convert.ToInt32(Console.ReadLine());
             Console.Write("Сколько кристаллов вы хотите купить?");
-            crystall = Convert.ToInt32(Console.ReadLine());
-            gold -= crystall * crystallPrice;
-            Console.WriteLine("У вас в сумке есть " + crystall + " криссталов и " + gold + " золота ");
+            
+
+            crystallCount = Convert.ToInt32(Console.ReadLine());
+
+            gold -= crystallCount * crystallPrice;
+            Console.WriteLine("У вас в сумке есть " + crystallCount + " криссталов и " + gold + " золота ");
         }
 
     }
 }
-
