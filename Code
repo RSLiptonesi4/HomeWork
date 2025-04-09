@@ -2,33 +2,17 @@ using System;
 
 namespace FirstProject {
     internal class Program {
-        static void Main(string[] args) 
-        {
-string first = "Jason";
-string second = "Stepler";
-Console.WriteLine("Regular state");
-Console.WriteLine("Name:" + first);
-Console.WriteLine("Surname:" + second);
-string conversely = first;
-first = second;
-second = conversely;
-Console.WriteLine("Reserve state");
-Console.WriteLine("Surname:" + first);
-Console.WriteLine("Name:" + second);
-
-string firstCup = "Tea";
-string secondCup = "Jucy";
-Console.WriteLine("First state");
-Console.WriteLine("First cup:" + firstCup);
-Console.WriteLine("Second cup:" + secondCup);
-string round = firstCup;
-firstCup = secondCup;
-secondCup = round;
-Console.WriteLine("Second state");
-Console.WriteLine("Second cup:" + firstCup);
-Console.WriteLine("First cup:" + secondCup);
-
-
+        static void Main(string[] args) {
+            int gold;
+            int crystall;
+            int crystallPrice = 10;
+            Console.WriteLine("Добро пожаловать, курс обмена 1 кристалл = 10 золота. ");
+            Console.Write("Сколько у вас золота? ");
+            gold = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Сколько кристаллов вы хотите купить?");
+            crystall = Convert.ToInt32(Console.ReadLine());
+            gold -= crystall * crystallPrice;
+            Console.WriteLine("У вас в сумке есть " + crystall + " криссталов и " + gold + " золота ");
         }
 
     }
