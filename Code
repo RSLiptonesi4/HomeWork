@@ -1,23 +1,19 @@
 using System;
 
-namespace FirstProject {
-    internal class Program {
-        static void Main(string[] args) 
-            {
-            Console.Write("Введите количество пациентов: ");
-            
-            int patients = Convert.ToInt32(Console.ReadLine());
-            
-            int timeForPatient = 10;
-            
-            int totalTimeInMinute = patients * timeForPatient;
+class Program {
+    static void Main() 
+    {
+        Console.Write("Введите количество пациентов: ");
+        string input = Console.ReadLine();
+        int patients = int.Parse(input);
 
-            int hours = totalTimeInMinute / 60;
-            int minutes = totalTimeInMinute % 60;
+        int timeForOnePatient = 10;
+        int totalTimeInMinutes = patients * timeForOnePatient;
 
-            Console.WriteLine("Вы должны отстоять " + hours + " часов и " + minutes + " минут ");
-        }
+        int minutesInHour = 60;
+        int totalTimeInHours = totalTimeInMinutes / minutesInHour;
+        int remainingMinutes = totalTimeInMinutes % minutesInHour;
 
-
+        Console.WriteLine("Вы будете ожидать " + totalTimeInHours + " часа и " + remainingMinutes + " минут.");
     }
 }
